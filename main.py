@@ -11,7 +11,7 @@ from telegram.ext import (
     MessageHandler, filters, ConversationHandler
 )
 
-TOKEN = "7642718218:AAGW3n3AihkudTIpgNSbqNEjgfk73iz3Ufk"
+TOKEN = "8057509848:AAHJsE1q63yn9OgBFftKiE8MUqOpidilBuw"
 
 POSITIONS = ["1", "2", "3", "4", "5"]
 COTES = ["1.23", "1.54"]
