@@ -1340,7 +1340,7 @@ def main():
     # Handler for the import confirmation (OUI/NON) - This needs to be a general handler
     # because the response comes after the file has been received and processed by import_data.
     # Add a filter to ensure this handler only triggers when awaiting confirmation
-    application.add_handler(MessageHandler(filters.TEXT & filters.Regex("^(OUI|NON|oui|non)$") & filters.ContextSubjects(context_types=ContextTypes.DEFAULT_TYPE, user_data=True).has("awaiting_import_confirmation"), handle_import_confirmation))
+    application.add_handler(MessageHandler(filters.TEXT & filters.Regex("^(OUI|NON|oui|non)$") , handle_import_confirmation))
 
 
     # Handler general for menu buttons and other text (fallback)
